@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var particles, pX, pY, pZ, particle, sprite1, sprite2, sprite3, sprite4, sprite5, parameters, color, sprite, theCloud, size;
+    var particles, pX, pY, pZ, particle, sprite1, sprite2, sprite3, sprite4, sprite5, parameters, color, sprite, theCloud, size, doit;
     var materials = [];
     var particleCount = 2000;
     var container = $('#banner');
@@ -14,6 +14,21 @@
     var scene = new THREE.Scene();
     scene.fog = new THREE.FogExp2(0x000000, 0.006);
     //renderer.setClearColor(0xffffff, 0);
+
+    /**
+     * Hopefully, in 1000ms window resize could be reasonably considered done
+     */
+    $(window).resize(function (evt) {
+        clearTimeout(doit);
+        doit = setTimeout(function () {
+          HEIGHT = container.outerHeight();
+          WIDTH = container.width();
+          camera.aspect = WIDTH / HEIGHT;
+          camera.updateProjectionMatrix();
+
+          renderer.setSize( WIDTH, HEIGHT );
+        }, 1000);
+    });
 
 
     renderer.setSize(WIDTH, HEIGHT);
