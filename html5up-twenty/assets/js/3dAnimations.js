@@ -16,7 +16,7 @@
     //renderer.setClearColor(0xffffff, 0);
 
     /**
-     * Hopefully, in 1000ms window resize could be reasonably considered done
+     * Hopefully, in 600ms window resize could be reasonably considered done
      */
     $(window).resize(function (evt) {
         clearTimeout(doit);
@@ -27,7 +27,7 @@
           camera.updateProjectionMatrix();
 
           renderer.setSize( WIDTH, HEIGHT );
-        }, 1000);
+        }, 600);
     });
 
 
