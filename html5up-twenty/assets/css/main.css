@@ -1269,6 +1269,9 @@ blockquote {
 .text-justify {
   text-align: justify; }
 
+.text-centered {
+  text-align: center; }
+
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
@@ -1391,10 +1394,6 @@ input[type="email"] {
     font-weight: normal;
     text-transform: none !important; }
   .icon.circle {
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
     border: 0;
     border-radius: 100%;
     display: inline-block;
@@ -1406,18 +1405,20 @@ input[type="email"] {
     text-decoration: none;
     top: 0;
     width: 2.25em; }
-    .icon.circle:hover {
-      top: -0.2em; }
     .icon.circle.fa-twitter {
       background: #70aecd;
       color: #fff; }
       .icon.circle.fa-twitter:hover {
         background: #7fb7d2; }
     .icon.circle.fa-facebook {
-      background: #7490c3;
-      color: #fff; }
+      background: url("https://cdn2.iconfinder.com/data/icons/freebie-social-media-icons/64/meetup.png");
+      background-size: 49px;
+      position: relative;
+      top: 17px; }
       .icon.circle.fa-facebook:hover {
-        background: #829bc9; }
+        opacity: 0.8; }
+      .icon.circle.fa-facebook:before {
+        content: " "; }
     .icon.circle.fa-google-plus {
       background: #db6b67;
       color: #fff; }

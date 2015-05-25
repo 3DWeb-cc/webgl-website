@@ -146,6 +146,10 @@
 		text-align: justify;
 	}
 
+	.text-centered {
+		text-align: center;
+	}
+
 /* Section/Article */
 
 	section, article {
@@ -298,7 +302,6 @@
 		position: relative;
 
 		&.circle {
-			@include vendor('transition', 'all 0.2s ease-in-out');
 			border: 0;
 			border-radius: 100%;
 			display: inline-block;
@@ -311,10 +314,6 @@
 			top: 0;
 			width: 2.25em;
 
-			&:hover {
-				top: -0.2em;
-			}
-
 			&.fa-twitter {
 				background: _palette(twitter, bg);
 				color: _palette(twitter, fg);
@@ -325,11 +324,16 @@
 			}
 
 			&.fa-facebook {
-				background: _palette(facebook, bg);
-				color: _palette(facebook, fg);
+				background: url('https://cdn2.iconfinder.com/data/icons/freebie-social-media-icons/64/meetup.png');
+  				background-size: 49px;
+  				position: relative;
+  				top: 17px;
 
 				&:hover {
-					background: lighten(_palette(facebook, bg), 4);
+					opacity: 0.8;
+				}
+				&:before {
+					content: " ";
 				}
 			}
 
