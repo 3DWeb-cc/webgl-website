@@ -19,13 +19,13 @@
 
 // Palette.
 	$palette: (
-		bg:				#f3f6fa,
+		bg:				#091017,
 		fg:				#7c8081,
 		border:			transparentize(#7c8081, 0.8),
 
 		header: (
 			bg:			#fff,
-			fg:			inherit,
+			fg:			#fff,
 			alt-bg:		transparent,
 			alt-fg:		#fff
 		),
@@ -43,7 +43,7 @@
 		),
 
 		one: (
-			bg:			#83d3c9,
+			bg:			#39585C,
 			fg:			#fff
 		),
 
@@ -83,7 +83,7 @@
 		),
 
 		github: (
-			bg:			#dcad8b,
+			bg:			#595DB2,
 			fg:			#fff
 		),
 

@@ -1191,7 +1191,7 @@ body {
     margin-left: 8.33333%; } }
 /* Basic */
 body {
-  background: #f3f6fa; }
+  background: #091017; }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1215,7 +1215,7 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  color: #3fb1a3;
+  color: #121c1d;
   text-decoration: none;
   border-bottom: dotted 1px; }
   a:hover {
@@ -1330,7 +1330,7 @@ textarea {
   input[type="password"]:focus,
   input[type="email"]:focus,
   textarea:focus {
-    border-color: #83d3c9; }
+    border-color: #39585C; }
 
 input[type="text"],
 input[type="password"],
@@ -1425,10 +1425,10 @@ input[type="email"] {
       .icon.circle.fa-google-plus:hover {
         background: #df7b77; }
     .icon.circle.fa-github {
-      background: #dcad8b;
+      background: #595DB2;
       color: #fff; }
       .icon.circle.fa-github:hover {
-        background: #e1b89b; }
+        background: #676bb8; }
     .icon.circle.fa-dribbble {
       background: #da83ae;
       color: #fff; }
@@ -1554,15 +1554,15 @@ input[type="reset"],
   input[type="submit"].special,
   input[type="reset"].special,
   .button.special {
-    background: #83d3c9;
-    border-color: #83d3c9;
+    background: #39585C;
+    border-color: #39585C;
     color: #fff !important; }
     input[type="button"].special:hover,
     input[type="submit"].special:hover,
     input[type="reset"].special:hover,
     .button.special:hover {
-      background: #96dad1 !important;
-      border-color: #96dad1 !important; }
+      background: #43676c !important;
+      border-color: #43676c !important; }
   input[type="button"].fit,
   input[type="submit"].fit,
   input[type="reset"].fit,
@@ -1583,18 +1583,19 @@ input[type="reset"],
   .wrapper.style1 {
     padding: 0; }
   .wrapper.style2 {
-    background-color: #83d3c9;
+    background-color: #39585C;
     background-image: url("images/light-bl.svg"), url("images/light-br.svg");
     background-position: bottom left, bottom right;
     background-repeat: no-repeat, no-repeat;
     background-size: 25em, 25em;
-    color: #fff; }
+    color: #fff;
+    width: 100%; }
     .wrapper.style2 .button:hover {
       background: rgba(255, 255, 255, 0.15) !important; }
     .wrapper.style2 .button.special {
       background: #fff;
       border-color: #fff;
-      color: #83d3c9 !important; }
+      color: #39585C !important; }
       .wrapper.style2 .button.special:hover {
         border-color: inherit !important;
         color: #fff !important; }
@@ -1628,9 +1629,9 @@ input[type="reset"],
   100% {
     top: 0; } }
 #header {
-  background: #fff;
+  background: url("../../images/colored-stripes.png");
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-  color: inherit;
+  color: #fff;
   cursor: default;
   font-size: 0.8em;
   left: 0;
@@ -1638,7 +1639,9 @@ input[type="reset"],
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000; }
+  z-index: 10000;
+  text-shadow: 2px 1px 1px black;
+  background-position: 0 63%; }
   #header h1 {
     font-weight: 900;
     margin: 0; }
@@ -1743,7 +1746,7 @@ input[type="reset"],
       padding: 0 1em;
       border: 0; }
     .dropotron > li:hover > a {
-      background: #83d3c9;
+      background: #39585C;
       color: #fff; }
     .dropotron > li:first-child {
       border-top: 0; }
@@ -1772,7 +1775,7 @@ input[type="reset"],
 #banner {
   background-attachment: scroll, scroll, scroll, fixed;
   background-color: #645862;
-  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/bg-colorida.jpg");
   background-position: bottom left, bottom right, top left, top center;
   background-repeat: no-repeat, no-repeat, repeat, no-repeat;
   background-size: 25em, 25em, auto, cover;
@@ -1864,7 +1867,7 @@ body.index #main {
 #cta {
   background-attachment: scroll, scroll, scroll, fixed;
   background-color: #645862;
-  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/bg-colorida.jpg");
   background-position: top left, top right, top left, bottom center;
   background-repeat: no-repeat, no-repeat, repeat, no-repeat;
   background-size: 25em, 25em, auto, cover;

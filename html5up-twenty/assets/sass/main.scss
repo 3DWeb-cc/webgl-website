@@ -578,6 +578,7 @@
 			background-repeat: no-repeat, no-repeat;
 			background-size: $pattern-background-size, $pattern-background-size;
 			color: _palette(one, fg);
+			width: 100%;
 
 			.button {
 				&:hover {
@@ -617,7 +618,7 @@
 	}
 
 	#header {
-		background: _palette(header, bg);
+		background: url('../../images/colored-stripes.png');
 		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.075);
 		color: _palette(header, fg);
 		cursor: default;
@@ -628,6 +629,8 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		text-shadow: 2px 1px 1px black;
+  	background-position: 0 63%;
 
 		h1 {
 			font-weight: 900;
@@ -791,7 +794,7 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: _palette(three, bg);
-		background-image: url('images/light-bl.svg'), url('images/light-br.svg'), url('images/overlay.png'), url('../../images/banner.jpg');
+		background-image: url('images/light-bl.svg'), url('images/light-br.svg'), url('images/overlay.png'), url('../../images/bg-colorida.jpg');
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
@@ -912,7 +915,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: _palette(three, bg);
-		background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../../images/banner.jpg');
+		background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../../images/bg-colorida.jpg');
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
