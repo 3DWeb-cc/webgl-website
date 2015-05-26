@@ -58,6 +58,10 @@
 	body {
 		background: _palette(bg);
 
+		&.contact {
+			background: white;
+		}
+
 		&.is-loading {
 			*, *:before, *:after {
 				@include vendor('animation', 'none !important');
@@ -887,10 +891,15 @@
 		background: white;
 
 		header {
-			margin-bottom: 2em;
+			margin-bottom: 4em;
 			h2 {
 				font-weight: bold;
 			}
+		}
+
+		.wrapper.style1 {
+			margin-bottom: 0em;
+			width: 665px;
 		}
 
 		#boxes {
@@ -900,11 +909,25 @@
 			margin: 0 !important;
 
 			.box {
-				background-color: rgba(0,0,0,0.2);
 			    padding: 20px !important;
 			    width: 300px;
 			    margin-bottom: 20px;
 			    margin-right: 20px;
+
+			    .logo {
+
+			    	&.kronos img {
+			    		width: 300px;
+			    	}
+
+			    	&.webgl img {
+			    		width: 200px;
+			    	}
+
+			    	a {
+			    		border-bottom: 0px;
+			    	}
+			    }
 			}
 		}
 	}

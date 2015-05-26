@@ -1192,6 +1192,8 @@ body {
 /* Basic */
 body {
   background: #091017; }
+  body.contact {
+    background: white; }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1848,20 +1850,28 @@ body.index #main {
   text-align: center;
   background: white; }
   #sponsors header {
-    margin-bottom: 2em; }
+    margin-bottom: 4em; }
     #sponsors header h2 {
       font-weight: bold; }
+  #sponsors .wrapper.style1 {
+    margin-bottom: 0em;
+    width: 665px; }
   #sponsors #boxes {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     margin: 0 !important; }
     #sponsors #boxes .box {
-      background-color: rgba(0, 0, 0, 0.2);
       padding: 20px !important;
       width: 300px;
       margin-bottom: 20px;
       margin-right: 20px; }
+      #sponsors #boxes .box .logo.kronos img {
+        width: 300px; }
+      #sponsors #boxes .box .logo.webgl img {
+        width: 200px; }
+      #sponsors #boxes .box .logo a {
+        border-bottom: 0px; }
 
 /* CTA */
 #cta {
