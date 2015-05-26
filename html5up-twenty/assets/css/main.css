@@ -2370,3 +2370,7 @@ body.index #main {
     height: 34px; } }
 
 /*# sourceMappingURL=main.css.map */
+
+.animation-container {
+  position: relative;
+}
