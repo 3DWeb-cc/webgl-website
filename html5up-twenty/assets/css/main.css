@@ -1855,7 +1855,7 @@ body.index #main {
       font-weight: bold; }
   #sponsors .wrapper.style1 {
     margin-bottom: 0em;
-    width: 665px; }
+    width: 350px; }
   #sponsors #boxes {
     display: flex;
     flex-flow: row wrap;
@@ -1868,8 +1868,6 @@ body.index #main {
       margin-right: 20px; }
       #sponsors #boxes .box .logo.kronos img {
         width: 300px; }
-      #sponsors #boxes .box .logo.webgl img {
-        width: 200px; }
       #sponsors #boxes .box .logo a {
         border-bottom: 0px; }
 
@@ -2370,7 +2368,3 @@ body.index #main {
     height: 34px; } }
 
 /*# sourceMappingURL=main.css.map */
-
-.animation-container {
-  position: relative;
-}
